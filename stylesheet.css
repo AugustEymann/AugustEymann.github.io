@@ -26,5 +26,7 @@ background-color: #f4da31;
 }
 
 .headImage {
-padding: 14px 16px;    
+    position: absolute;
+    left: 100px;
+    top: 150px;
 }
