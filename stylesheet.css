@@ -1,32 +1,72 @@
-.topnav {
-    background-color: #333;
-    opacity: 0.6;
-    overflow: hidden;
-}
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    font-family: Arial;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-.topnav a.active {
-    background-color: #a1761f;
-    color: white;
-}
-
 body {
-background-color: #f4da31;
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
 
-.headImage {
-    position: absolute;
-    left: 100px;
-    top: 150px;
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+  background: #e58512;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 50px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
 }
