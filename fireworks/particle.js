@@ -1,11 +1,11 @@
-function Particle(x, y, firework,col,col2,col3) {
+function Particle(x, y, firework,r,g,b) {   
     this.pos = createVector(x, y)
     this.acc = createVector(0, 0)
     this.firework = firework;
     this.lifespan = 255
-    this.col = col
-    this.col2 = col2
-    this.col3 = col3
+    this.r = r
+    this.g = g
+    this.b = b
     if (this.firework) {
         this.vel = createVector(0, random(-18, -10));
     } else {
@@ -37,10 +37,10 @@ function Particle(x, y, firework,col,col2,col3) {
     this.show = function () {
         if (!this.firework) {
             strokeWeight(2)
-            stroke(this.col,this.col2,this.col3, this.lifespan)
+            stroke(this.r,this.g,this.b, this.lifespan)
         } else {
             strokeWeight(4)
-            stroke(this.col,this.col2,this.col3)
+            stroke(this.r,this.g,this.b)
         }
         point(this.pos.x, this.pos.y)
     }
