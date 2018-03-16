@@ -1,8 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <style>
+  .blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+  </style>
 <head>
 <body>
-<center><h1>Samurai</h1></center>
+<center><h1 id="blink_me">Samurai are better than knights</h1></center>
 </body>
 </html>
