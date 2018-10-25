@@ -1,0 +1,12 @@
+body {
+  background-image: url('./Assets/rainycity.gif');
+  background-size: cover;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+#date {
+  margin-top: 250px;
+  font-size: 50px;
+  font-style: oblique;
+  color: #ffdc5e;
+}
