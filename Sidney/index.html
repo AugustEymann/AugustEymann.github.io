@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="moment.js"></script>
-    <
+    <script src="swapdogs.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
     <iframe width="0" height="0" src="Assets/loving.mp3" frameborder="0" allowfullscreen></iframe>
 </head>
@@ -17,6 +17,15 @@
     <script>
       var date = document.getElementById("date");
       var now = moment([2018, 9, 10]).fromNow(true); 
-      date.innerHTML = now
+          var sd = new SwapDogs(
+       date,
+        {
+          autoInit: true,
+          words: [now, "Sidney XOXO", "Sidney <3", "Sidney"],
+          letters: 'abcdefghijklmnopqrstuvwxyz',
+          interval: 4000,
+          interval2: 40
+        }
+    );
     </script>
 </html>
